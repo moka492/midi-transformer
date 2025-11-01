@@ -19,7 +19,7 @@ This project is a solo effort. The core idea: apply transformers (GPT-style) to 
 
 ## Installation
 
-### ⚠️ Important: Model File Download
+### Important: Model File Download
 
 **If you downloaded this as a ZIP file**, the model won't work because GitHub doesn't include Git LFS files in ZIP downloads.
 
