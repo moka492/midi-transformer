@@ -22,7 +22,7 @@ def generate_musical(ckpt="checkpoints/best_model.pt", n=1, max_tok=450, scale='
     
     tok = build_tokenizer()
     
-    ckpt_data = torch.load(ckpt, map_location=dev)
+    ckpt_data = torch.load(ckpt, map_location=dev, weights_only=False)
     mdl = GPTModel(vocab_size=407, d_model=512, n_heads=8, n_layers=12, max_seq_len=1024, d_ff_mult=4)
     mdl.load_state_dict(ckpt_data["model"], strict=False)
     mdl = mdl.to(dev)

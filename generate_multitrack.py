@@ -18,7 +18,7 @@ def generate_multitrack(num_samples: int = 1, max_tokens: int = 500, scale: str 
    
     tokenizer = build_tokenizer()
     
-    checkpoint_data = torch.load("checkpoints/best_model.pt", map_location=device)
+    checkpoint_data = torch.load("checkpoints/best_model.pt", map_location=device, weights_only=False)
     model = GPTModel(vocab_size=407, d_model=512, n_heads=8, n_layers=12, 
                      max_seq_len=1024, d_ff_mult=4)
     model.load_state_dict(checkpoint_data["model"], strict=False)

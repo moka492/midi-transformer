@@ -19,11 +19,27 @@ This project is a solo effort. The core idea: apply transformers (GPT-style) to 
 
 ## Installation
 
-Clone the repo and install dependencies:
+### ⚠️ Important: Model File Download
 
+**If you downloaded this as a ZIP file**, the model won't work because GitHub doesn't include Git LFS files in ZIP downloads.
+
+**Option A: Clone with Git (Recommended)**
 ```bash
+git clone https://github.com/moka492/midi-transformer.git
+cd midi-transformer
+git lfs pull  # Downloads the actual 445MB model file
 pip install -r requirements.txt
 ```
+
+**Option B: Manual Download (If you used ZIP)**
+1. Download the repo as ZIP and extract
+2. The `checkpoints/best_model.pt` file will be only 134 bytes (LFS pointer)
+3. **You need the real model file** - contact the repo owner for a direct download link
+4. Replace the 134-byte file with the actual 445MB model file
+5. Install dependencies: `pip install -r requirements.txt`
+
+**Verify Installation:**
+Check that `checkpoints/best_model.pt` is approximately 445MB, not 134 bytes.
 
 Model checkpoints live in `checkpoints/best_model.pt`. You can retrain if you want experimental results.
 
