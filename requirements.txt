@@ -1,0 +1,6 @@
+torch>=2.0.0
+miditok>=2.1.0
+miditoolkit>=1.0.0
+mido>=1.2.10
+pretty_midi>=0.2.9
+numpy>=1.24.0
