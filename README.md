@@ -3,7 +3,7 @@ I created MIDI Transformer, a deep learning model that generates realistic piano
 
 ## Overview
 
-This project is a solo effort. The core idea: apply transformers (GPT-style) to symbolic music. I trained the model mostly on the MAESTRO classical piano dataset. Unlike text models, this one learns pitch, timing, structure, tempo, and melodic motion—all mapped using REMI tokenization. Outputs are proper MIDI files, ready for playback or editing.
+This project is a solo effort. The core idea: apply transformers (GPT-style) to symbolic music. I trained the model mostly on the MAESTRO classical piano dataset. Unlike text models, this one learns pitch, timing, structure, tempo, and melodic motion all mapped using REMI tokenization. Outputs are proper MIDI files, ready for playback or editing.
 
 ## Features
 
@@ -19,7 +19,7 @@ This project is a solo effort. The core idea: apply transformers (GPT-style) to 
 
 ## Installation
 
-### Important: Model File Download
+## Important: Model File Download
 
 **If you downloaded this as a ZIP file**, the model won't work because GitHub doesn't include Git LFS files in ZIP downloads.
 
